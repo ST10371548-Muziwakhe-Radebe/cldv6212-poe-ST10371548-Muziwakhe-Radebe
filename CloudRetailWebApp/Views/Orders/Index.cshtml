@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CloudRetailWebApp.Models.OrderModel>
+@{
+    ViewData["Title"] = "Orders";
+}
+<h2>Orders</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Place New Order</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.CustomerId</td>
+                <td>@order.ProductId</td>
+                <td>@order.Quantity</td>
+                <td>@order.Total</td>
+                <td>@order.Status</td>
+                <td>@order.CreatedAt.ToLocalTime().ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>

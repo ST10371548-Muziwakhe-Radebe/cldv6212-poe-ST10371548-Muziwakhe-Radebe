@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CloudRetailWebApp.Models.CustomerModel>
+@{
+    ViewData["Title"] = "Customers";
+}
+<h2>Customers</h2>
+<p><a asp-action="Create" class="btn btn-primary">Add Customer</a></p>
+<table class="table">
+    <thead>
+        <tr><th>Name</th><th>Email</th><th>Phone</th><th>Created</th><th></th></tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName @item.LastName</td>
+                <td>@item.Email</td>
+                <td>@item.Phone</td>
+                <td>@item.CreatedAt.ToLocalTime().ToString("g")</td>
+                <td>
+                    <a asp-action="Details" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Details</a> |
+                    <a asp-action="Edit" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Edit</a> |
+                    <a asp-action="Delete" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

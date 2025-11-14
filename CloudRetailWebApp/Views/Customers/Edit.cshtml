@@ -1,0 +1,28 @@
+﻿@model CloudRetailWebApp.Models.CustomerModel
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+<h2>Edit Customer</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="PartitionKey" />
+    <input type="hidden" asp-for="RowKey" />
+    <div class="form-group">
+        <label>First name</label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Last name</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

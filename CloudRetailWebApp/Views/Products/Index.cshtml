@@ -1,0 +1,44 @@
+﻿@model IEnumerable<CloudRetailWebApp.Models.ProductModel>
+@{
+    ViewData["Title"] = "Products";
+}
+<h2>Products</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add Product</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Created</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.ImageBlobPath))
+                    {
+                        <img src="@item.ImageBlobPath" alt="Product image" width="80" />
+                    }
+                </td>
+                <td>@item.CreatedAt.ToLocalTime().ToString("g")</td>
+                <td>
+                    <a asp-action="Details" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Details</a> |
+                    <a asp-action="Edit" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Edit</a> |
+                    <a asp-action="Delete" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
