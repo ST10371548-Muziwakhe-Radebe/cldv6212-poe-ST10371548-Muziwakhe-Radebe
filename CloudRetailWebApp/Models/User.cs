@@ -9,15 +9,15 @@ namespace CloudRetailWebApp.Models
 
         [Required]
         [StringLength(50)]
-        public string Username { get; set; } = null!; // Suppress warning: will be set by EF or code
+        public string Username { get; set; } = null!; 
 
         [Required]
-        [StringLength(255)] // Store hashed password
+        [StringLength(255)] 
         public string PasswordHash { get; set; } = null!;
 
         [Required]
         [StringLength(20)]
-        public string Role { get; set; } = null!; // "Customer" or "Admin"
+        public string Role { get; set; } = null!; 
 
         [StringLength(100)]
         public string? Email { get; set; }
@@ -25,7 +25,7 @@ namespace CloudRetailWebApp.Models
         [StringLength(100)]
         public string? Name { get; set; }
 
-        // Navigation properties for related entities (optional, for easier data access)
+        
         public virtual ICollection<CartItem>? CartItems { get; set; }
         public virtual ICollection<Order>? Orders { get; set; }
     }

@@ -13,6 +13,6 @@ namespace CloudRetailWebApp.Models
         public string TableNameProducts { get; set; } = string.Empty;
         public string QueueName { get; set; } = string.Empty;
         public string FileShareName { get; set; } = string.Empty;
-        public string FunctionAppBaseUrl { get; set; } = string.Empty;   // optional if calling your Functions
+        public string FunctionAppBaseUrl { get; set; } = string.Empty;   
     }
 }

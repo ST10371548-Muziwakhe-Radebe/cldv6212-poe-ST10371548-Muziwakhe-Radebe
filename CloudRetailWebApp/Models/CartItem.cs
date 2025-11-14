@@ -7,16 +7,16 @@ namespace CloudRetailWebApp.Models
         public int CartItemId { get; set; }
 
         [Required]
-        public int UserId { get; set; } // Foreign Key to User
+        public int UserId { get; set; } 
 
         [Required]
-        public string ProductId { get; set; } = null!; // Foreign Key to Product (Table Storage RowKey)
+        public string ProductId { get; set; } = null!; 
 
         [Required]
         public int Quantity { get; set; } = 1;
 
-        // Navigation properties (optional)
+
         public virtual User? User { get; set; }
-        // public virtual ProductModel? Product { get; set; } // Link to Table Storage Product (fetched separately)
+        
     }
 }

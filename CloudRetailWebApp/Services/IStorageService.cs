@@ -22,25 +22,24 @@ namespace CloudRetailWebApp.Services
 {
     public interface IStorageService
     {
-        // Customer methods (Table Storage)
+       
         Task AddCustomerAsync(CustomerModel customer);
         Task<List<CustomerModel>> GetCustomersAsync();
-        Task<CustomerModel?> GetCustomerAsync(string partitionKey, string rowKey); // Use nullable return type
+        Task<CustomerModel?> GetCustomerAsync(string partitionKey, string rowKey); 
         Task UpdateCustomerAsync(CustomerModel customer);
         Task DeleteCustomerAsync(string partitionKey, string rowKey);
 
-        // Product methods (Table Storage + Blob Storage)
-        Task AddProductAsync(ProductModel product, IFormFile? imageFile = null); // Make imageFile optional
+     
+        Task AddProductAsync(ProductModel product, IFormFile? imageFile = null); 
         Task<List<ProductModel>> GetProductsAsync();
-        Task<ProductModel?> GetProductAsync(string partitionKey, string rowKey); // Use nullable return type
-        Task UpdateProductAsync(ProductModel product, IFormFile? imageFile = null); // Make imageFile optional
+        Task<ProductModel?> GetProductAsync(string partitionKey, string rowKey); 
+        Task UpdateProductAsync(ProductModel product, IFormFile? imageFile = null); 
         Task DeleteProductAsync(string partitionKey, string rowKey);
 
-        // Order methods (Queue Storage)
         Task EnqueueOrderAsync(OrderMessageModel order);
         Task<List<OrderMessageModel>> GetQueuedOrdersAsync();
 
-        // Contract methods (File Storage)
+     
         Task SendFileToFileShareAsync(string fileName, byte[] content);
         Task<byte[]?> GetFileFromFileShareAsync(string fileName);
         Task<List<string>> ListFilesInFileShareAsync();

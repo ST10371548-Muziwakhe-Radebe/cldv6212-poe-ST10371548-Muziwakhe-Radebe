@@ -8,6 +8,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+// DESCRIPTION: This controller handles the main landing page and user portal redirection
+// for the Cloud Retail Web App. It provides separate dashboards for
+// customers and administrators based on their role.
+// SOURCES:
+// - ASP.NET Core MVC Controllers: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/actions
+// - Entity Framework Core: https://learn.microsoft.com/en-us/ef/core/
+// - Azure Storage Queues: https://learn.microsoft.com/en-us/azure/storage/queues/
+// - Azure Storage Files: https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files
+
 namespace CloudRetailWebApp.Controllers
 {
     public class HomeController : Controller

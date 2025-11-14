@@ -1,11 +1,14 @@
-﻿// FILE: OrdersController.cs
+﻿
 // DESCRIPTION: Controller for managing order-related actions in CloudRetailWebApp.
 //              Includes listing queued orders and creating new orders via IStorageService.
 // SOURCES:
 //    - ASP.NET Core MVC Controllers: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/actions
 //    - ASP.NET Core Model Binding: https://learn.microsoft.com/en-us/aspnet/core/mvc/models/model-binding
+//    - ASP.NET Core MVC Controllers: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/actions
+//    - Entity Framework Core: https://learn.microsoft.com/en-us/ef/core/
+//    - Azure Storage Queues: https://learn.microsoft.com/en-us/azure/storage/queues/
 
-// Controllers/OrdersController.cs
+
 using CloudRetailWebApp.Models;
 using CloudRetailWebApp.Services;
 using CloudRetailWebApp.Data;
@@ -27,7 +30,7 @@ namespace CloudRetailWebApp.Controllers
             _context = context;
         }
 
-        // GET: Orders - Show orders from SQL database
+
         public async Task<IActionResult> Index()
         {
             var userIdClaim = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
@@ -45,30 +48,17 @@ namespace CloudRetailWebApp.Controllers
             return View(orders);
         }
 
-        // GET: Orders/Create (Simulate placing an order via queue - this is now handled by CartController.Checkout)
-        // You might keep this for manual testing or specific scenarios.
+
         public IActionResult Create()
         {
-            // This might involve creating an OrderMessageModel and sending it to the queue via _storageService.
-            // But the main flow should be Cart -> Checkout -> SQL Order -> Queue Message.
-            // So, this action might be redundant or used differently.
-            // ViewBag.Info = "Orders are now placed via the Cart.";
-            // return View(); // Or redirect
-            return RedirectToAction("Index"); // Redirect as the main flow is via Cart
+            return RedirectToAction("Index"); 
         }
 
-        // POST: Orders/Create (Simulate placing an order via queue - now handled by CartController.Checkout)
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("OrderId,UserId,TotalAmount")] OrderMessageModel orderMessage) // Assuming a message model
         {
-            // This logic is now in CartController.Checkout
-            // 1. Fetch cart items for UserId from SQL DB
-            // 2. Calculate TotalAmount
-            // 3. Create Order record in SQL DB
-            // 4. Clear Cart items from SQL DB
-            // 5. Send OrderMessage (based on SQL Order) to Queue via _storageService
-            // For this controller, we just redirect.
             return RedirectToAction("Index");
         }
     }

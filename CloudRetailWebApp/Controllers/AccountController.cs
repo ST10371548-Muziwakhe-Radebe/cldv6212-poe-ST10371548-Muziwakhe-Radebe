@@ -6,9 +6,19 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using BCrypt.Net; // Ensure you have installed BCrypt.Net-Next
-using Microsoft.EntityFrameworkCore; // For EF Async methods
-using System; // For DateTime
+using BCrypt.Net; 
+using Microsoft.EntityFrameworkCore; 
+using System;
+
+// DESCRIPTION: This controller implements user authentication and registration for the Cloud Retail Web App.
+// It uses ASP.NET Core's built-in authentication system with cookie-based authentication
+// and Entity Framework Core for database interactions.
+// SOURCES:
+// - ASP.NET Core Authentication & Authorization: https://learn.microsoft.com/en-us/aspnet/core/security/authentication/
+// - ASP.NET Core MVC Controllers: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/actions
+// - Entity Framework Core: https://learn.microsoft.com/en-us/ef/core/
+// - BCrypt for Password Hashing: https://www.nuget.org/packages/BCrypt.Net-Next/
+// - Azure Table Storage Integration: https://learn.microsoft.com/en-us/azure/storage/tables/
 
 namespace CloudRetailWebApp.Controllers
 {
@@ -38,10 +48,9 @@ namespace CloudRetailWebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Find user in the SQL database
+ 
                 var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == model.Username);
 
-                // Check if user exists and if the provided password matches the stored hash
                 if (user != null && BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
                 {
                     await SignInUserAsync(user);
@@ -62,13 +71,13 @@ namespace CloudRetailWebApp.Controllers
                 }
                 else
                 {
-                    // If login fails, add an error to the model state
+                    
                     ModelState.AddModelError("", "Invalid username or password.");
                     TempData["ErrorMessage"] = "Invalid username or password. Please try again.";
                 }
             }
 
-            // If we got this far, something failed, redisplay form
+  
             ViewData["ReturnUrl"] = returnUrl;
             return View(model);
         }
@@ -113,7 +122,7 @@ namespace CloudRetailWebApp.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            // If user is a Customer, also save to Azure Table Storage
+     
             if (normalizedRole == "Customer")
             {
                 try
@@ -125,15 +134,14 @@ namespace CloudRetailWebApp.Controllers
                         FirstName = nameParts.Length > 0 ? nameParts[0] : model.Username,
                         LastName = nameParts.Length > 1 ? nameParts[1] : string.Empty,
                         Email = model.Email,
-                        Phone = string.Empty, // Phone not collected during registration
+                        Phone = string.Empty, 
                         CreatedAt = DateTime.UtcNow
                     };
                     await _storageService.AddCustomerAsync(customer);
                 }
                 catch (Exception ex)
                 {
-                    // Log error but don't fail registration - user is already saved to SQL
-                    // You might want to log this to a logging service
+                   
                     Console.WriteLine($"Warning: Failed to save customer to Azure Storage: {ex.Message}");
                 }
             }
@@ -155,7 +163,7 @@ namespace CloudRetailWebApp.Controllers
             var username = User.Identity?.Name ?? "User";
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             TempData["SuccessMessage"] = $"You have been logged out successfully. Goodbye, {username}!";
-            return RedirectToAction("Index", "Home"); // Redirect to landing page after logout
+            return RedirectToAction("Index", "Home"); 
         }
 
         [HttpGet]

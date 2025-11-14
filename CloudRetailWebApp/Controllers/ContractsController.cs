@@ -26,19 +26,17 @@ namespace CloudRetailWebApp.Controllers
             _functionApiService = functionApiService;
         }
 
-        // GET: Contracts
+
         public IActionResult Index()
         {
             return View();
         }
 
-        // GET: Contracts/Upload
         public IActionResult Upload()
         {
             return View();
         }
 
-        // POST: Contracts/Upload
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Upload(IFormFile file)
@@ -70,7 +68,7 @@ namespace CloudRetailWebApp.Controllers
             }
         }
 
-        // GET: Contracts/Download
+ 
         public async Task<IActionResult> Download(string fileName)
         {
             if (string.IsNullOrEmpty(fileName))
@@ -101,7 +99,7 @@ namespace CloudRetailWebApp.Controllers
             }
         }
 
-        // POST: Contracts/Delete
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(string fileName)
@@ -136,7 +134,7 @@ namespace CloudRetailWebApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: Contracts/ListFiles (API endpoint for AJAX)
+     
         [HttpGet]
         public async Task<IActionResult> ListFiles()
         {

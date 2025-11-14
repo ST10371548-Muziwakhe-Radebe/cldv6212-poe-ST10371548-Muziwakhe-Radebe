@@ -22,7 +22,7 @@ namespace CloudRetailWebApp.Models
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
         public decimal Price { get; set; }
-        public string? ImageBlobPath { get; set; } // Use nullable string for optional image
+        public string? ImageBlobPath { get; set; } 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

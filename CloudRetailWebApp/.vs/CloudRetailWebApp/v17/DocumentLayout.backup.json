@@ -3,8 +3,116 @@
   "WorkspaceRootPath": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\contractscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\services\\istorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:services\\istorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\services\\functionapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:services\\functionapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:services\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\customerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\customerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\azuresettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\azuresettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -15,76 +123,12 @@
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\views\\products\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:views\\products\\addtocart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\controllers\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:controllers\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\services\\istorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:services\\istorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\cloudretailwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -105,22 +149,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\azuresettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\azuresettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -179,10 +207,6 @@
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:views\\customers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\services\\functionapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:services\\functionapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|d:\\users\\mboni\\onedrive\\documents\\github\\cldv6212-poe-st10371548-muziwakhe-radebe\\cloudretailwebapp\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9A5AA3B6-B28F-496F-B192-EB23B2F46EC9}|CloudRetailWebApp.csproj|solutionrelative:views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -194,43 +218,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 778,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAsAAAAgrLqbUQ4cwBYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-04T12:52:18.31Z",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwFEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:42:09.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAswBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:41:24.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartItemViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartItemViewModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartItemViewModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartItemViewModel.cs",
+              "RelativeToolTip": "Controllers\\CartItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:06:23.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContractsController.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\ContractsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContractsController.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\ContractsController.cs",
+              "RelativeToolTip": "Controllers\\ContractsController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAswIgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T20:35:14.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
               "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAIwIsAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T12:57:04.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAABEAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T20:59:15.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
               "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T12:58:36.538Z",
               "EditorCaption": ""
@@ -238,539 +314,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AzureStorageService.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\AzureStorageService.cs",
-              "RelativeDocumentMoniker": "Services\\AzureStorageService.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\AzureStorageService.cs",
-              "RelativeToolTip": "Services\\AzureStorageService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwDQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:16:02.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T10:45:40.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:49:29.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductModel.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductModel.cs",
-              "RelativeDocumentMoniker": "Models\\ProductModel.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductModel.cs",
-              "RelativeToolTip": "Models\\ProductModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:01:02.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Controllers\\CartController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:41:24.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAqwKgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T12:58:02.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAD8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAswHwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T10:33:03.301Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductEntity.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductEntity.cs",
-              "RelativeDocumentMoniker": "Models\\ProductEntity.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductEntity.cs",
-              "RelativeToolTip": "Models\\ProductEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T13:25:42.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerModel.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerModel.cs",
-              "RelativeDocumentMoniker": "Models\\CustomerModel.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerModel.cs",
-              "RelativeToolTip": "Models\\CustomerModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T12:59:54.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "AddtoCart.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\AddtoCart.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\AddtoCart.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\AddtoCart.cshtml",
-              "RelativeToolTip": "Views\\Products\\AddtoCart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T13:20:49.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CartItemViewModel.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartItemViewModel.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartItemViewModel.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\CartItemViewModel.cs",
-              "RelativeToolTip": "Controllers\\CartItemViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T13:06:23.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:42:09.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:08:19.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:09:32.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:19:35.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "Models\\CartItem.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CartItem.cs",
-              "RelativeToolTip": "Models\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:07:35.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:06:55.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "IStorageService.cs",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\IStorageService.cs",
               "RelativeDocumentMoniker": "Services\\IStorageService.cs",
               "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\IStorageService.cs",
               "RelativeToolTip": "Services\\IStorageService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T13:15:06.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CloudRetailWebApp.csproj",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\CloudRetailWebApp.csproj",
-              "RelativeDocumentMoniker": "CloudRetailWebApp.csproj",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\CloudRetailWebApp.csproj",
-              "RelativeToolTip": "CloudRetailWebApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-04T13:13:47.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwGQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:18:58.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Orders.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Orders.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Orders.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Orders.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Orders.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwD0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T10:47:06.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T10:46:34.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T10:44:52.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:38:29.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrderModel.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\OrderModel.cs",
-              "RelativeDocumentMoniker": "Models\\OrderModel.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\OrderModel.cs",
-              "RelativeToolTip": "Models\\OrderModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:00:24.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AzureSettings.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\AzureSettings.cs",
-              "RelativeDocumentMoniker": "Models\\AzureSettings.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\AzureSettings.cs",
-              "RelativeToolTip": "Models\\AzureSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T18:48:59.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T19:10:36.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T09:08:13.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T09:07:25.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T09:06:47.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T09:05:31.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Create.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Create.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T14:04:36.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T14:04:02.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Create.cshtml",
-              "RelativeToolTip": "Views\\Products\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:50:11.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Delete.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Products\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:51:44.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Products\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:50:43.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customers\\Index.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Index.cshtml",
-              "RelativeToolTip": "Views\\Customers\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:08:50.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customers\\Edit.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Customers\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:09:43.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customers\\Details.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Details.cshtml",
-              "RelativeToolTip": "Views\\Customers\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:10:08.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customers\\Delete.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Customers\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:10:45.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Customers\\Create.cshtml",
-              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Create.cshtml",
-              "RelativeToolTip": "Views\\Customers\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:09:20.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 10,
               "Title": "FunctionApiService.cs",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\FunctionApiService.cs",
               "RelativeDocumentMoniker": "Services\\FunctionApiService.cs",
@@ -783,7 +365,504 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AzureStorageService.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\AzureStorageService.cs",
+              "RelativeDocumentMoniker": "Services\\AzureStorageService.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Services\\AzureStorageService.cs",
+              "RelativeToolTip": "Services\\AzureStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:16:02.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:06:55.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:08:39.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductEntity.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductEntity.cs",
+              "RelativeDocumentMoniker": "Models\\ProductEntity.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductEntity.cs",
+              "RelativeToolTip": "Models\\ProductEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:25:42.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\OrderModel.cs",
+              "RelativeDocumentMoniker": "Models\\OrderModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\OrderModel.cs",
+              "RelativeToolTip": "Models\\OrderModel.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwB4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:00:24.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:38:29.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:08:19.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T19:10:36.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerModel.cs",
+              "RelativeDocumentMoniker": "Models\\CustomerModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerModel.cs",
+              "RelativeToolTip": "Models\\CustomerModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T12:59:54.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CustomerEntity.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerEntity.cs",
+              "RelativeDocumentMoniker": "Models\\CustomerEntity.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerEntity.cs",
+              "RelativeToolTip": "Models\\CustomerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:07:19.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerDashboardViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CustomerDashboardViewModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CustomerDashboardViewModel.cs",
+              "RelativeToolTip": "Models\\CustomerDashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T21:07:17.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductModel.cs",
+              "RelativeDocumentMoniker": "Models\\ProductModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\ProductModel.cs",
+              "RelativeToolTip": "Models\\ProductModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:01:02.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\AdminDashboardViewModel.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "Models\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T20:34:29.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:09:32.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AzureSettings.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\AzureSettings.cs",
+              "RelativeDocumentMoniker": "Models\\AzureSettings.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\AzureSettings.cs",
+              "RelativeToolTip": "Models\\AzureSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T18:48:59.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:07:35.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:49:29.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:45:40.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:19:35.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAsAAAAgrLqbUQ4cwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-04T12:52:18.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AddtoCart.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\AddtoCart.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\AddtoCart.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\AddtoCart.cshtml",
+              "RelativeToolTip": "Views\\Products\\AddtoCart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T13:20:49.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CloudRetailWebApp.csproj",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\CloudRetailWebApp.csproj",
+              "RelativeDocumentMoniker": "CloudRetailWebApp.csproj",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\CloudRetailWebApp.csproj",
+              "RelativeToolTip": "CloudRetailWebApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-04T13:13:47.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwGQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:18:58.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Orders.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Orders.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Orders.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:47:06.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:46:34.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:44:52.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T09:08:13.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T09:07:25.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T09:06:47.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T09:05:31.12Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 45,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Create.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T14:04:36.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T14:04:02.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:50:11.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Delete.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Products\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:51:44.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:50:43.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Index.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Index.cshtml",
+              "RelativeToolTip": "Views\\Customers\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:08:50.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Edit.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Customers\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:09:43.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Details.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Details.cshtml",
+              "RelativeToolTip": "Views\\Customers\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:10:08.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Delete.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Customers\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:10:45.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Create.cshtml",
+              "ToolTip": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Customers\\Create.cshtml",
+              "RelativeToolTip": "Views\\Customers\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-04T13:09:20.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\Users\\mboni\\OneDrive\\Documents\\GitHub\\cldv6212-poe-ST10371548-Muziwakhe-Radebe\\CloudRetailWebApp\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Products\\Details.cshtml",
@@ -791,8 +870,7 @@
               "RelativeToolTip": "Views\\Products\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-04T13:51:14.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T13:51:14.821Z"
             }
           ]
         }

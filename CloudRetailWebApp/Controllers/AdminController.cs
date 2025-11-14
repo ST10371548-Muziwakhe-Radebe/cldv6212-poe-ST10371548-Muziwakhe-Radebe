@@ -1,15 +1,25 @@
 ﻿using CloudRetailWebApp.Data;
 using CloudRetailWebApp.Models;
 using CloudRetailWebApp.Services;
-using Microsoft.AspNetCore.Authorization; // For [Authorize(Roles = "Admin")]
+using Microsoft.AspNetCore.Authorization; 
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore; // For EF Async methods
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore; 
 using System.Linq;
+
+// DESCRIPTION: This controller handles administrative functions for the Cloud Retail Web App.
+// It enforces role-based access control for administrators only and provides
+// dashboards, order management, and status updates.
+// SOURCES:
+// - ASP.NET Core Authorization: https://learn.microsoft.com/en-us/aspnet/core/security/authorization/roles
+// - ASP.NET Core MVC Controllers: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/actions
+// - Entity Framework Core: https://learn.microsoft.com/en-us/ef/core/
+// - Azure Functions: https://learn.microsoft.com/en-us/azure/azure-functions/
+// - Azure Storage Queues: https://learn.microsoft.com/en-us/azure/storage/queues/
+// - Azure Storage Files: https://learn.microsoft.com/en-us/azure/storage/files/storage-dotnet-how-to-use-files
 
 namespace CloudRetailWebApp.Controllers
 {
-    [Authorize(Roles = "Admin")] // Ensure user is an Admin
+    [Authorize(Roles = "Admin")] 
     public class AdminController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -25,19 +35,19 @@ namespace CloudRetailWebApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // Get statistics for dashboard
+
             var totalOrders = await _context.Orders.CountAsync();
             var pendingOrders = await _context.Orders.CountAsync(o => o.Status == "Pending");
             var totalUsers = await _context.Users.CountAsync();
             
-            // Get queued orders via Azure Functions (fallback to direct storage if needed)
+      
             var queuedOrders = await _functionApiService.GetQueueMessagesAsync();
             if (queuedOrders == null || !queuedOrders.Any())
             {
                 queuedOrders = await _storageService.GetQueuedOrdersAsync();
             }
             
-            // Get contract files via Azure Functions (fallback if needed)
+   
             var contractFiles = await _functionApiService.GetContractFilesAsync();
             if (contractFiles == null || !contractFiles.Any())
             {
@@ -53,34 +63,33 @@ namespace CloudRetailWebApp.Controllers
             return View();
         }
 
-        // Action to view all orders (accessible only by Admin)
+   
         public async Task<IActionResult> Orders()
         {
             var orders = await _context.Orders
-                .Include(o => o.User) // Include user info (optional, requires User navigation prop)
-                .OrderByDescending(o => o.OrderDate) // Show newest first
+                .Include(o => o.User) 
+                .OrderByDescending(o => o.OrderDate) 
                 .ToListAsync();
             return View(orders);
         }
 
-        // Action to update order status (accessible only by Admin)
         [HttpPost]
         public async Task<IActionResult> UpdateOrderStatus(int orderId, string newStatus)
         {
-            // Validate newStatus if necessary (e.g., only allow "Processed", "Cancelled")
+            
             if (newStatus != "Processed" && newStatus != "Cancelled")
             {
-                // Log error or return bad request
+        
                 return BadRequest("Invalid status update.");
             }
 
             var order = await _context.Orders.FindAsync(orderId);
-            if (order != null) // Check if order exists
+            if (order != null) 
             {
                 order.Status = newStatus;
                 await _context.SaveChangesAsync();
             }
-            return RedirectToAction("Orders"); // Redirect back to the orders list
+            return RedirectToAction("Orders"); 
         }
     }
 }

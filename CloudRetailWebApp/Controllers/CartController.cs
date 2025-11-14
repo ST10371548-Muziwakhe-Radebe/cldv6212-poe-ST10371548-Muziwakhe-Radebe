@@ -6,6 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
+// DESCRIPTION: This controller handles shopping cart functions for the Cloud Retail Web App.
+// It manages adding, removing, and updating items in the user's cart, and
+// processes the checkout flow by creating orders and placing them in a queue.
+// SOURCES:
+// - ASP.NET Core Authorization: https://learn.microsoft.com/en-us/aspnet/core/security/authorization/
+// - ASP.NET Core MVC Controllers: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/actions
+// - Entity Framework Core: https://learn.microsoft.com/en-us/ef/core/
+// - Azure Storage Queues: https://learn.microsoft.com/en-us/azure/storage/queues/
+
 namespace CloudRetailWebApp.Controllers
 {
     [Authorize]
