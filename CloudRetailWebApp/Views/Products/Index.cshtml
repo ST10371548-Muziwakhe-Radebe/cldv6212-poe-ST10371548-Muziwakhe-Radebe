@@ -1,14 +1,21 @@
 ﻿@model IEnumerable<CloudRetailWebApp.Models.ProductModel>
+
 @{
     ViewData["Title"] = "Products";
 }
-<h2>Products</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Add Product</a>
-</p>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Products</h2>
 
-<table class="table">
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Create" class="btn btn-primary btn-lg">
+            ➕ Add New Product
+        </a>
+    }
+</div>
+
+<table class="table table-striped">
     <thead>
         <tr>
             <th>Name</th>
@@ -16,16 +23,17 @@
             <th>Price</th>
             <th>Image</th>
             <th>Created</th>
-            <th></th>
+            <th>Actions</th>
         </tr>
     </thead>
+
     <tbody>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@item.Name</td>
                 <td>@item.Description</td>
-                <td>@item.Price</td>
+                <td>R @item.Price</td>
                 <td>
                     @if (!string.IsNullOrEmpty(item.ImageBlobPath))
                     {
@@ -33,12 +41,41 @@
                     }
                 </td>
                 <td>@item.CreatedAt.ToLocalTime().ToString("g")</td>
+
                 <td>
-                    <a asp-action="Details" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Details</a> |
-                    <a asp-action="Edit" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Edit</a> |
-                    <a asp-action="Delete" asp-route-partitionKey="@item.PartitionKey" asp-route-rowKey="@item.RowKey">Delete</a>
+                    @* Add to Cart (only logged in users) *@
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <form asp-controller="Products" asp-action="AddToCartFromProducts" method="post" style="display:inline;">
+                            <input type="hidden" name="productId" value="@item.RowKey" />
+                            <button type="submit" class="btn btn-success btn-sm">Add to Cart</button>
+                        </form>
+                        <span> | </span>
+                    }
+
+                    <a asp-action="Details"
+                       asp-route-partitionKey="@item.PartitionKey"
+                       asp-route-rowKey="@item.RowKey">Details</a>
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <span> | </span>
+                        <a asp-action="Edit"
+                           asp-route-partitionKey="@item.PartitionKey"
+                           asp-route-rowKey="@item.RowKey">Edit</a>
+
+                        <span> | </span>
+                        <a asp-action="Delete"
+                           asp-route-partitionKey="@item.PartitionKey"
+                           asp-route-rowKey="@item.RowKey">Delete</a>
+                    }
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <a class="btn btn-warning mt-4" asp-controller="Cart" asp-action="CartView">🛒 View Selected Products</a>
+}

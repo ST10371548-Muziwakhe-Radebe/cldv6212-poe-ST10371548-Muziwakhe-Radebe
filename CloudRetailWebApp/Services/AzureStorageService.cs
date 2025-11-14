@@ -7,6 +7,7 @@ using Azure.Storage.Files.Shares;
 using CloudRetailWebApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Azure.Cosmos.Table;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -23,272 +24,432 @@ using System.Threading.Tasks;
 //   https://learn.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues
 //   https://learn.microsoft.com/azure/storage/files/storage-dotnet-how-to-use-files
 
+// Services/AzureStorageService.cs
 
 namespace CloudRetailWebApp.Services
 {
     public class AzureStorageService : IStorageService
     {
-        private readonly string _conn;
-        private readonly TableClient _customersTable;
-        private readonly TableClient _productsTable;
-        private readonly BlobContainerClient _blobContainer;
+        private readonly CloudTable _customerTable;
+        private readonly CloudTable _productTable;
+        private readonly BlobContainerClient _blobContainerClient;
         private readonly QueueClient _queueClient;
         private readonly ShareClient _shareClient;
-        private readonly string _blobContainerName;
-        private readonly string _fileShareName;
 
-        // CONSTRUCTOR
-        // PURPOSE: Initializes Azure SDK clients for Table, Blob, Queue, and File Storage.
-        // REFERENCES:
-        //   https://learn.microsoft.com/azure/storage/common/storage-introduction
-        //   https://learn.microsoft.com/dotnet/api/azure.data.tables.tableclient
-
-        public AzureStorageService(IConfiguration config)
+        public AzureStorageService(IConfiguration configuration) // Inject IConfiguration
         {
-            _conn = config["Azure:StorageConnectionString"];
-            _blobContainerName = config["Azure:BlobContainer"];
-            _fileShareName = config["Azure:FileShareName"];
+            // Read from Azure section in appsettings.json
+            string? storageConnectionString = configuration["Azure:StorageConnectionString"] ?? 
+                                              configuration.GetConnectionString("StorageConnectionString"); // Fallback to ConnectionStrings section
+            if (string.IsNullOrEmpty(storageConnectionString))
+            {
+                throw new InvalidOperationException("StorageConnectionString is not configured. Please add it to appsettings.json under 'Azure:StorageConnectionString' or 'ConnectionStrings:StorageConnectionString'.");
+            }
 
-            _customersTable = new TableClient(_conn, config["Azure:TableCustomers"] ?? "Customers");
-            _productsTable = new TableClient(_conn, config["Azure:TableProducts"] ?? "Products");
-            _blobContainer = new BlobContainerClient(_conn, _blobContainerName ?? "productimages");
-            _queueClient = new QueueClient(_conn, config["Azure:QueueOrders"] ?? "ordersqueue");
-            _shareClient = new ShareClient(_conn, _fileShareName ?? "contracts");
+            // --- Table Storage Setup ---
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
+            CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
+            _customerTable = tableClient.GetTableReference("Customers"); // Use your table name
+            _customerTable.CreateIfNotExistsAsync().Wait(); // Ensure table exists
+            _productTable = tableClient.GetTableReference("Products"); // Use your table name
+            _productTable.CreateIfNotExistsAsync().Wait(); // Ensure table exists
 
-            // Ensures resources exist
-            _customersTable.CreateIfNotExists();
-            _productsTable.CreateIfNotExists();
-            _blobContainer.CreateIfNotExists();
-            _queueClient.CreateIfNotExists();
-            _shareClient.CreateIfNotExists();
+            // --- Blob Storage Setup ---
+            BlobServiceClient blobServiceClient = new BlobServiceClient(storageConnectionString);
+            _blobContainerClient = blobServiceClient.GetBlobContainerClient("productimages"); // Use your container name
+            // Create container without public access (storage account doesn't allow public access)
+            // Images will be accessed via SAS tokens or private URLs if needed
+            _blobContainerClient.CreateIfNotExistsAsync().Wait(); // Create if not exists
+
+            // --- Queue Storage Setup ---
+            QueueServiceClient queueServiceClient = new QueueServiceClient(storageConnectionString);
+            _queueClient = queueServiceClient.GetQueueClient("ordersqueue"); // Use your queue name
+            _queueClient.CreateIfNotExistsAsync().Wait(); // Create if not exists
+
+            // --- File Storage Setup ---
+            ShareServiceClient shareServiceClient = new ShareServiceClient(storageConnectionString);
+            _shareClient = shareServiceClient.GetShareClient("contracts"); // Use your share name
+            _shareClient.CreateIfNotExistsAsync().Wait(); // Create if not exists
         }
 
-        // CUSTOMER STORAGE SECTION (Azure Table Storage)
-        // FOUND AT:
-        //   https://learn.microsoft.com/azure/storage/tables/table-storage-design-guide
+        // --- Customer Methods (Table Storage) ---
+        public async Task InsertCustomerAsync(CustomerEntity customer)
+        {
+            TableOperation insertOperation = TableOperation.Insert(customer);
+            await _customerTable.ExecuteAsync(insertOperation);
+        }
 
+        public async Task<CustomerEntity?> GetCustomerEntityAsync(string customerId)
+        {
+            TableOperation retrieveOperation = TableOperation.Retrieve<CustomerEntity>("Customer", customerId); // PartitionKey, RowKey
+            TableResult result = await _customerTable.ExecuteAsync(retrieveOperation);
+            return result.Result as CustomerEntity; // Cast result
+        }
 
+        public async Task<List<CustomerEntity>> GetAllCustomersAsync()
+        {
+            TableQuery<CustomerEntity> query = new TableQuery<CustomerEntity>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "Customer"));
+            var results = new List<CustomerEntity>();
+            TableContinuationToken? token = null;
+            do
+            {
+                TableQuerySegment<CustomerEntity> segment = await _customerTable.ExecuteQuerySegmentedAsync(query, token);
+                results.AddRange(segment.Results);
+                token = segment.ContinuationToken;
+            } while (token != null);
+            return results;
+        }
+
+        // --- Product Methods (Table Storage) ---
+        public async Task InsertProductAsync(ProductEntity product)
+        {
+            TableOperation insertOperation = TableOperation.Insert(product);
+            await _productTable.ExecuteAsync(insertOperation);
+        }
+
+        public async Task<ProductEntity?> GetProductEntityAsync(string productId)
+        {
+            TableOperation retrieveOperation = TableOperation.Retrieve<ProductEntity>("Product", productId); // PartitionKey, RowKey
+            TableResult result = await _productTable.ExecuteAsync(retrieveOperation);
+            return result.Result as ProductEntity; // Cast result
+        }
+
+        public async Task<List<ProductEntity>> GetAllProductsAsync()
+        {
+            TableQuery<ProductEntity> query = new TableQuery<ProductEntity>().Where(TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "Product"));
+            var results = new List<ProductEntity>();
+            TableContinuationToken? token = null;
+            do
+            {
+                TableQuerySegment<ProductEntity> segment = await _productTable.ExecuteQuerySegmentedAsync(query, token);
+                results.AddRange(segment.Results);
+                token = segment.ContinuationToken;
+            } while (token != null);
+            return results;
+        }
+
+        // --- Blob Storage Methods ---
+        public async Task<string> UploadImageAsync(Stream imageStream, string fileName)
+        {
+            var blobClient = _blobContainerClient.GetBlobClient(fileName);
+            await blobClient.UploadAsync(imageStream, overwrite: true); // Overwrite if exists
+            return blobClient.Uri.ToString(); // Return the URL of the uploaded image
+        }
+
+        public async Task<bool> DeleteImageAsync(string fileName)
+        {
+            var blobClient = _blobContainerClient.GetBlobClient(fileName);
+            return await blobClient.DeleteIfExistsAsync();
+        }
+
+        // --- Queue Storage Methods ---
+        public async Task SendMessageToQueueAsync(string message)
+        {
+            await _queueClient.SendMessageAsync(message);
+        }
+
+        // --- File Storage Methods ---
+        public async Task<bool> UploadContractFileAsync(Stream fileStream, string fileName)
+        {
+            try
+            {
+                var shareDirectoryClient = _shareClient.GetRootDirectoryClient();
+                var shareFileClient = shareDirectoryClient.GetFileClient(fileName);
+                await shareFileClient.CreateAsync(fileStream.Length);
+                await shareFileClient.UploadRangeAsync(new Azure.HttpRange(0, fileStream.Length), fileStream);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                Console.WriteLine($"Error uploading file: {ex.Message}");
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteContractFileAsync(string fileName)
+        {
+            try
+            {
+                var shareDirectoryClient = _shareClient.GetRootDirectoryClient();
+                var shareFileClient = shareDirectoryClient.GetFileClient(fileName);
+                return await shareFileClient.DeleteIfExistsAsync();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                Console.WriteLine($"Error deleting file: {ex.Message}");
+                return false;
+            }
+        }
+
+        // IStorageService Implementation Methods
+
+        // Customer methods
         public async Task AddCustomerAsync(CustomerModel customer)
         {
-            // Adds a new entity to Azure Table
-            var entity = new TableEntity(customer.PartitionKey, customer.RowKey)
+            var entity = new CustomerEntity(customer.RowKey)
             {
-                {"FirstName", customer.FirstName},
-                {"LastName", customer.LastName},
-                {"Email", customer.Email},
-                {"Phone", customer.Phone},
-                {"CreatedAt", customer.CreatedAt}
+                FirstName = customer.FirstName,
+                LastName = customer.LastName,
+                Email = customer.Email,
+                Phone = customer.Phone,
+                CreatedAt = customer.CreatedAt
             };
-            await _customersTable.AddEntityAsync(entity);
+            await InsertCustomerAsync(entity);
         }
 
         public async Task<List<CustomerModel>> GetCustomersAsync()
         {
-            // Retrieves all entities from Table Storage
-            var list = new List<CustomerModel>();
-            await foreach (var entity in _customersTable.QueryAsync<TableEntity>())
+            var entities = await GetAllCustomersAsync();
+            return entities.Select(e => new CustomerModel
             {
-                list.Add(new CustomerModel
-                {
-                    PartitionKey = entity.PartitionKey,
-                    RowKey = entity.RowKey,
-                    FirstName = entity.GetString("FirstName"),
-                    LastName = entity.GetString("LastName"),
-                    Email = entity.GetString("Email"),
-                    Phone = entity.GetString("Phone"),
-                    CreatedAt = entity.GetDateTime("CreatedAt") ?? DateTime.UtcNow
-                });
-            }
-            return list.OrderByDescending(x => x.CreatedAt).ToList();
+                PartitionKey = e.PartitionKey,
+                RowKey = e.RowKey,
+                FirstName = e.FirstName,
+                LastName = e.LastName,
+                Email = e.Email,
+                Phone = e.Phone,
+                CreatedAt = e.CreatedAt
+            }).ToList();
         }
 
-        public async Task<CustomerModel> GetCustomerAsync(string partitionKey, string rowKey)
+        async Task<CustomerModel?> IStorageService.GetCustomerAsync(string partitionKey, string rowKey)
         {
-            // Retrieves one specific customer
-            // FOUND AT: https://learn.microsoft.com/dotnet/api/azure.data.tables.tableclient.getentityasync
-            try
+            var entity = await GetCustomerEntityAsync(rowKey);
+            if (entity == null) return null;
+            return new CustomerModel
             {
-                var response = await _customersTable.GetEntityAsync<TableEntity>(partitionKey, rowKey);
-                var e = response.Value;
-                return new CustomerModel
-                {
-                    PartitionKey = e.PartitionKey,
-                    RowKey = e.RowKey,
-                    FirstName = e.GetString("FirstName"),
-                    LastName = e.GetString("LastName"),
-                    Email = e.GetString("Email"),
-                    Phone = e.GetString("Phone"),
-                    CreatedAt = e.GetDateTime("CreatedAt") ?? DateTime.UtcNow
-                };
-            }
-            catch (RequestFailedException)
-            {
-                return null;
-            }
+                PartitionKey = entity.PartitionKey,
+                RowKey = entity.RowKey,
+                FirstName = entity.FirstName,
+                LastName = entity.LastName,
+                Email = entity.Email,
+                Phone = entity.Phone,
+                CreatedAt = entity.CreatedAt
+            };
         }
 
         public async Task UpdateCustomerAsync(CustomerModel customer)
         {
-            // Updates an existing customer entity.
-            // FOUND AT: https://learn.microsoft.com/dotnet/api/azure.data.tables.tableupdateoptions
-            var entity = new TableEntity(customer.PartitionKey, customer.RowKey)
+            var entity = new CustomerEntity(customer.RowKey)
             {
-                {"FirstName", customer.FirstName},
-                {"LastName", customer.LastName},
-                {"Email", customer.Email},
-                {"Phone", customer.Phone},
-                {"CreatedAt", customer.CreatedAt}
+                FirstName = customer.FirstName,
+                LastName = customer.LastName,
+                Email = customer.Email,
+                Phone = customer.Phone,
+                CreatedAt = customer.CreatedAt
             };
-            await _customersTable.UpsertEntityAsync(entity, TableUpdateMode.Replace);
+            TableOperation replaceOperation = TableOperation.Replace(entity);
+            await _customerTable.ExecuteAsync(replaceOperation);
         }
 
         public async Task DeleteCustomerAsync(string partitionKey, string rowKey)
         {
-            // Deletes an entity from Table Storage.
-            await _customersTable.DeleteEntityAsync(partitionKey, rowKey);
+            var entity = await GetCustomerEntityAsync(rowKey);
+            if (entity != null)
+            {
+                TableOperation deleteOperation = TableOperation.Delete(entity);
+                await _customerTable.ExecuteAsync(deleteOperation);
+            }
         }
 
-
-        // PRODUCT STORAGE SECTION (Table + Blob Storage)
-        // FOUND AT:
-        //   https://learn.microsoft.com/azure/storage/blobs/storage-upload-process-images
-        //   https://learn.microsoft.com/azure/storage/tables/table-storage-how-to-use-dotnet
-
-
-        public async Task AddProductAsync(ProductModel product, IFormFile imageFile = null)
+        // Product methods
+        public async Task AddProductAsync(ProductModel product, IFormFile? imageFile = null)
         {
-            // Uploads product image to Blob and adds metadata to Table
-            if (imageFile != null)
+            if (imageFile != null && imageFile.Length > 0)
             {
-                var blobClient = _blobContainer.GetBlobClient($"{product.RowKey}_{imageFile.FileName}");
                 using var stream = imageFile.OpenReadStream();
-                await blobClient.UploadAsync(stream, overwrite: true);
-                product.ImageBlobPath = blobClient.Uri.ToString();
+                product.ImageBlobPath = await UploadImageAsync(stream, imageFile.FileName);
             }
 
-            var entity = new TableEntity(product.PartitionKey, product.RowKey)
+            var entity = new ProductEntity(product.RowKey)
             {
-                {"Name", product.Name},
-                {"Description", product.Description},
-                {"Price", product.Price},
-                {"ImageBlobPath", product.ImageBlobPath ?? string.Empty},
-                {"CreatedAt", product.CreatedAt}
+                Name = product.Name,
+                Description = product.Description,
+                Price = (double)product.Price,
+                ImageBlobPath = product.ImageBlobPath,
+                CreatedAt = product.CreatedAt
             };
-            await _productsTable.AddEntityAsync(entity);
+            await InsertProductAsync(entity);
         }
 
         public async Task<List<ProductModel>> GetProductsAsync()
         {
-            // Retrieves all products
-            var list = new List<ProductModel>();
-            await foreach (var entity in _productsTable.QueryAsync<TableEntity>())
+            var entities = await GetAllProductsAsync();
+            return entities.Select(e => new ProductModel
             {
-                list.Add(new ProductModel
-                {
-                    PartitionKey = entity.PartitionKey,
-                    RowKey = entity.RowKey,
-                    Name = entity.GetString("Name"),
-                    Description = entity.GetString("Description"),
-                    Price = entity.GetDouble("Price") != null ? Convert.ToDecimal(entity.GetDouble("Price")) : 0m,
-                    ImageBlobPath = entity.GetString("ImageBlobPath"),
-                    CreatedAt = entity.GetDateTime("CreatedAt") ?? DateTime.UtcNow
-                });
-            }
-            return list.OrderByDescending(x => x.CreatedAt).ToList();
+                PartitionKey = e.PartitionKey,
+                RowKey = e.RowKey,
+                Name = e.Name,
+                Description = e.Description,
+                Price = (decimal)e.Price,
+                ImageBlobPath = e.ImageBlobPath,
+                CreatedAt = e.CreatedAt
+            }).ToList();
         }
 
-        public async Task<ProductModel> GetProductAsync(string partitionKey, string rowKey)
+        async Task<ProductModel?> IStorageService.GetProductAsync(string partitionKey, string rowKey)
         {
-            // Retrieves one product entity from Table Storage
-            try
+            var entity = await GetProductEntityAsync(rowKey);
+            if (entity == null) return null;
+            return new ProductModel
             {
-                var response = await _productsTable.GetEntityAsync<TableEntity>(partitionKey, rowKey);
-                var e = response.Value;
-                return new ProductModel
-                {
-                    PartitionKey = e.PartitionKey,
-                    RowKey = e.RowKey,
-                    Name = e.GetString("Name"),
-                    Description = e.GetString("Description"),
-                    Price = e.GetDouble("Price") != null ? Convert.ToDecimal(e.GetDouble("Price")) : 0m,
-                    ImageBlobPath = e.GetString("ImageBlobPath"),
-                    CreatedAt = e.GetDateTime("CreatedAt") ?? DateTime.UtcNow
-                };
-            }
-            catch (RequestFailedException)
-            {
-                return null;
-            }
-        }
-
-        public async Task UpdateProductAsync(ProductModel product, IFormFile imageFile = null)
-        {
-            // Updates product information and reuploads image if provided
-            if (imageFile != null)
-            {
-                var blobClient = _blobContainer.GetBlobClient($"{product.RowKey}_{imageFile.FileName}");
-                using var stream = imageFile.OpenReadStream();
-                await blobClient.UploadAsync(stream, overwrite: true);
-                product.ImageBlobPath = blobClient.Uri.ToString();
-            }
-
-            var entity = new TableEntity(product.PartitionKey, product.RowKey)
-            {
-                {"Name", product.Name},
-                {"Description", product.Description},
-                {"Price", product.Price},
-                {"ImageBlobPath", product.ImageBlobPath ?? string.Empty},
-                {"CreatedAt", product.CreatedAt}
+                PartitionKey = entity.PartitionKey,
+                RowKey = entity.RowKey,
+                Name = entity.Name,
+                Description = entity.Description,
+                Price = (decimal)entity.Price,
+                ImageBlobPath = entity.ImageBlobPath,
+                CreatedAt = entity.CreatedAt
             };
-            await _productsTable.UpsertEntityAsync(entity, TableUpdateMode.Replace);
+        }
+
+        public async Task UpdateProductAsync(ProductModel product, IFormFile? imageFile = null)
+        {
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                // Delete old image if exists
+                var existingProduct = await ((IStorageService)this).GetProductAsync("Product", product.RowKey);
+                if (existingProduct != null && !string.IsNullOrEmpty(existingProduct.ImageBlobPath))
+                {
+                    var fileName = Path.GetFileName(existingProduct.ImageBlobPath);
+                    await DeleteImageAsync(fileName);
+                }
+                // Upload new image
+                using var stream = imageFile.OpenReadStream();
+                product.ImageBlobPath = await UploadImageAsync(stream, imageFile.FileName);
+            }
+
+            var entity = new ProductEntity(product.RowKey)
+            {
+                Name = product.Name,
+                Description = product.Description,
+                Price = (double)product.Price,
+                ImageBlobPath = product.ImageBlobPath,
+                CreatedAt = product.CreatedAt
+            };
+            TableOperation replaceOperation = TableOperation.Replace(entity);
+            await _productTable.ExecuteAsync(replaceOperation);
         }
 
         public async Task DeleteProductAsync(string partitionKey, string rowKey)
         {
-            // Deletes product entity from Table Storage
-            await _productsTable.DeleteEntityAsync(partitionKey, rowKey);
-        }
-
-        // ORDER QUEUE SECTION (Azure Queue Storage)
-        // FOUND AT:
-        //   https://learn.microsoft.com/azure/storage/queues/storage-dotnet-how-to-use-queues
-    
-
-        public async Task EnqueueOrderAsync(OrderModel order)
-        {
-            // Adds a new message (order) to the Azure Queue
-            var message = JsonConvert.SerializeObject(order);
-            await _queueClient.SendMessageAsync(Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(message)));
-        }
-
-        public async Task<List<OrderModel>> GetQueuedOrdersAsync()
-        {
-            // Reads messages from the Azure Queue (peek mode)
-            var list = new List<OrderModel>();
-            var peeked = await _queueClient.PeekMessagesAsync(maxMessages: 32);
-            foreach (var msg in peeked.Value)
+            var entity = await GetProductEntityAsync(rowKey);
+            if (entity != null)
             {
-                var bytes = Convert.FromBase64String(msg.MessageText);
-                var json = System.Text.Encoding.UTF8.GetString(bytes);
-                var order = JsonConvert.DeserializeObject<OrderModel>(json);
-                list.Add(order);
+                // Delete associated image if exists
+                if (!string.IsNullOrEmpty(entity.ImageBlobPath))
+                {
+                    var fileName = Path.GetFileName(entity.ImageBlobPath);
+                    await DeleteImageAsync(fileName);
+                }
+                TableOperation deleteOperation = TableOperation.Delete(entity);
+                await _productTable.ExecuteAsync(deleteOperation);
             }
-            return list;
         }
 
-        // AZURE FILE SHARE SECTION
-        // FOUND AT:
-        //   https://learn.microsoft.com/azure/storage/files/storage-dotnet-how-to-use-files
-       
+        // Order methods (Queue Storage)
+        public async Task EnqueueOrderAsync(OrderMessageModel order)
+        {
+            var orderMessage = JsonConvert.SerializeObject(order);
+            await SendMessageToQueueAsync(orderMessage);
+        }
+
+        public async Task<List<OrderMessageModel>> GetQueuedOrdersAsync()
+        {
+            // Note: Queue storage is typically for processing, not for listing all messages
+            // This is a simplified implementation for demonstration
+            var messages = await _queueClient.ReceiveMessagesAsync(maxMessages: 32);
+            var orders = new List<OrderMessageModel>();
+            foreach (var message in messages.Value)
+            {
+                try
+                {
+                    var order = JsonConvert.DeserializeObject<OrderMessageModel>(message.MessageText);
+                    if (order != null)
+                    {
+                        orders.Add(order);
+                    }
+                }
+                catch
+                {
+                    // Skip invalid messages
+                }
+            }
+            return orders;
+        }
+
+        // Contract methods (File Storage)
         public async Task SendFileToFileShareAsync(string fileName, byte[] content)
         {
-            // Uploads a file into Azure File Storage
-            var share = _shareClient;
-            var directory = share.GetRootDirectoryClient();
-            var file = directory.GetFileClient(fileName);
-            using var ms = new MemoryStream(content);
-            await file.CreateAsync(ms.Length);
-            await file.UploadRangeAsync(new HttpRange(0, ms.Length), ms);
+            using var stream = new MemoryStream(content);
+            await UploadContractFileAsync(stream, fileName);
+        }
+
+        public async Task<byte[]?> GetFileFromFileShareAsync(string fileName)
+        {
+            try
+            {
+                var shareDirectoryClient = _shareClient.GetRootDirectoryClient();
+                var shareFileClient = shareDirectoryClient.GetFileClient(fileName);
+                
+                if (!await shareFileClient.ExistsAsync())
+                {
+                    return null;
+                }
+
+                var fileInfo = await shareFileClient.GetPropertiesAsync();
+                var downloadInfo = await shareFileClient.DownloadAsync();
+                using var memoryStream = new MemoryStream();
+                await downloadInfo.Value.Content.CopyToAsync(memoryStream);
+                return memoryStream.ToArray();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error downloading file: {ex.Message}");
+                return null;
+            }
+        }
+
+        public async Task<List<string>> ListFilesInFileShareAsync()
+        {
+            try
+            {
+                var shareDirectoryClient = _shareClient.GetRootDirectoryClient();
+                var files = new List<string>();
+                
+                await foreach (var fileItem in shareDirectoryClient.GetFilesAndDirectoriesAsync())
+                {
+                    if (!fileItem.IsDirectory)
+                    {
+                        files.Add(fileItem.Name);
+                    }
+                }
+                
+                return files;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error listing files: {ex.Message}");
+                return new List<string>();
+            }
+        }
+
+        public async Task<bool> DeleteFileFromFileShareAsync(string fileName)
+        {
+            return await DeleteContractFileAsync(fileName);
+        }
+
+        // Convenience methods for controllers that use single-parameter calls
+        public async Task<CustomerEntity?> GetCustomerAsync(string rowKey)
+        {
+            return await GetCustomerEntityAsync(rowKey);
+        }
+
+        public async Task<ProductEntity?> GetProductAsync(string rowKey)
+        {
+            return await GetProductEntityAsync(rowKey);
         }
     }
 }

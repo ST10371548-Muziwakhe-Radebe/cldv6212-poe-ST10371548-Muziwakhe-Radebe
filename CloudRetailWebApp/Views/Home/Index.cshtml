@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "CloudRetail Portal";
+    var isAuthenticated = User?.Identity?.IsAuthenticated ?? false;
+}
+
+<section class="py-5 text-center">
+    <h1 class="display-5 fw-bold">Welcome to CloudRetail</h1>
+    <p class="lead text-muted">A single portal for customers and admins to manage retail operations across Azure Storage, SQL data, and Azure Functions.</p>
+
+    <div class="mt-4">
+        @if (!isAuthenticated)
+        {
+            <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg me-2">Log In</a>
+            <a asp-controller="Account" asp-action="Register" class="btn btn-outline-primary btn-lg">Register</a>
+        }
+        else
+        {
+            <a asp-controller="Home" asp-action="Portal" class="btn btn-success btn-lg">Go to my dashboard</a>
+        }
+    </div>
+</section>
+
+<section class="row text-center g-4">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Customer Experience</h5>
+                <p class="card-text">Browse products, manage your cart, place orders, and download contracts through a guided dashboard.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Administrator Control</h5>
+                <p class="card-text">Manage inventory, customers, contracts, and queue processing with real-time insights.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Azure-Powered</h5>
+                <p class="card-text">Built on Azure Storage, Functions, and SQL for the POE addendum requirements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+

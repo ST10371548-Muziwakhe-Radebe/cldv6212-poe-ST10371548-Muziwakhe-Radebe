@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Upload Contract";
+}
+
+<h2>Upload Contract</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<form asp-action="Upload" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group mb-3">
+        <label for="file" class="form-label"><strong>Select Contract File</strong></label>
+        <input type="file" name="file" class="form-control" accept=".pdf,.doc,.docx,.txt" required />
+        <small class="form-text text-muted">Supported formats: PDF, DOC, DOCX, TXT</small>
+    </div>
+
+    <div class="form-group mb-3">
+        <button type="submit" class="btn btn-primary">Upload Contract</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+

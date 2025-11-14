@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudRetailWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d340988fac3473e230ef322fbba40a9496359f51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34f8709d8cc899a05f424cc05a1112ff34491945")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudRetailWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudRetailWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

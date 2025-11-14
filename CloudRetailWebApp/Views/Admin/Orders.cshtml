@@ -1,0 +1,62 @@
+﻿@model IEnumerable<CloudRetailWebApp.Models.Order>
+
+@{
+    ViewData["Title"] = "Manage Orders";
+}
+
+<h2>Manage Orders</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>User</th> <!-- Assuming you Include User in the query -->
+            <th>Total Amount</th>
+            <th>Status</th>
+            <th>Order Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.User?.Name (@order.User?.Username)</td> <!-- Assuming you Include User in the query -->
+                <td>R @order.TotalAmount</td>
+                <td>
+                    @if (order.Status == "Pending")
+                    {
+                        <span class="badge badge-warning">@order.Status</span>
+                    }
+                    else if (order.Status == "Processed")
+                    {
+                        <span class="badge badge-success">@order.Status</span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-secondary">@order.Status</span>
+                    }
+                </td>
+                <td>@order.OrderDate.ToLocalTime().ToString("g")</td>
+                <td>
+                    @if (order.Status == "Pending")
+                    {
+                        <form asp-action="UpdateOrderStatus" method="post" style="display:inline;">
+                            <input type="hidden" name="orderId" value="@order.OrderId" />
+                            <select name="newStatus" class="form-control-sm">
+                                <option value="Processed">Mark as Processed</option>
+                                <option value="Cancelled">Cancel Order</option>
+                            </select>
+                            <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span>-</span> <!-- No action if already processed/cancelled -->
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -21,6 +21,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
+#nullable enable
+
 namespace CloudRetailsFunction.Services
 {
     public class AzureStorageService : IStorageService
@@ -91,7 +93,7 @@ namespace CloudRetailsFunction.Services
             return list.OrderByDescending(x => x.CreatedAt).ToList();
         }
 
-        public async Task<CustomerModel> GetCustomerAsync(string partitionKey, string rowKey)
+        public async Task<CustomerModel?> GetCustomerAsync(string partitionKey, string rowKey)
         {
             try
             {
@@ -135,12 +137,34 @@ namespace CloudRetailsFunction.Services
         // ATTRIBUTION: CRUD operations for product records and blob storage handling.
         // SOURCES:
         //    - Azure Blob Storage CRUD: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-upload
-        public async Task AddProductAsync(ProductModel product, IFormFile imageFile = null)
+        public async Task AddProductAsync(ProductModel product, IFormFile? imageFile = null)
         {
+            if (string.IsNullOrWhiteSpace(product.PartitionKey))
+            {
+                product.PartitionKey = "Product";
+            }
+
+            if (string.IsNullOrWhiteSpace(product.RowKey))
+            {
+                product.RowKey = Guid.NewGuid().ToString();
+            }
+
+            if (product.CreatedAt == default)
+            {
+                product.CreatedAt = DateTime.UtcNow;
+            }
+
             if (imageFile != null)
             {
                 var blobClient = _blobContainer.GetBlobClient($"{product.RowKey}_{imageFile.FileName}");
                 using var stream = imageFile.OpenReadStream();
+                await blobClient.UploadAsync(stream, overwrite: true);
+                product.ImageBlobPath = blobClient.Uri.ToString();
+            }
+            else if (!string.IsNullOrWhiteSpace(product.ImageBase64) && !string.IsNullOrWhiteSpace(product.ImageFileName))
+            {
+                var blobClient = _blobContainer.GetBlobClient($"{product.RowKey}_{product.ImageFileName}");
+                using var stream = new MemoryStream(Convert.FromBase64String(NormalizeBase64(product.ImageBase64)));
                 await blobClient.UploadAsync(stream, overwrite: true);
                 product.ImageBlobPath = blobClient.Uri.ToString();
             }
@@ -175,7 +199,7 @@ namespace CloudRetailsFunction.Services
             return list.OrderByDescending(x => x.CreatedAt).ToList();
         }
 
-        public async Task<ProductModel> GetProductAsync(string partitionKey, string rowKey)
+        public async Task<ProductModel?> GetProductAsync(string partitionKey, string rowKey)
         {
             try
             {
@@ -198,12 +222,19 @@ namespace CloudRetailsFunction.Services
             }
         }
 
-        public async Task UpdateProductAsync(ProductModel product, IFormFile imageFile = null)
+        public async Task UpdateProductAsync(ProductModel product, IFormFile? imageFile = null)
         {
             if (imageFile != null)
             {
                 var blobClient = _blobContainer.GetBlobClient($"{product.RowKey}_{imageFile.FileName}");
                 using var stream = imageFile.OpenReadStream();
+                await blobClient.UploadAsync(stream, overwrite: true);
+                product.ImageBlobPath = blobClient.Uri.ToString();
+            }
+            else if (!string.IsNullOrWhiteSpace(product.ImageBase64) && !string.IsNullOrWhiteSpace(product.ImageFileName))
+            {
+                var blobClient = _blobContainer.GetBlobClient($"{product.RowKey}_{product.ImageFileName}");
+                using var stream = new MemoryStream(Convert.FromBase64String(NormalizeBase64(product.ImageBase64)));
                 await blobClient.UploadAsync(stream, overwrite: true);
                 product.ImageBlobPath = blobClient.Uri.ToString();
             }
@@ -227,22 +258,25 @@ namespace CloudRetailsFunction.Services
         // ATTRIBUTION: Queue handling for order processing using Azure Queue Storage.
         // SOURCES:
         //    - Azure Queue Storage Documentation: https://learn.microsoft.com/en-us/azure/storage/queues/storage-queues-introduction
-        public async Task EnqueueOrderAsync(OrderModel order)
+        public async Task EnqueueOrderAsync(OrderMessageModel order)
         {
             var message = JsonConvert.SerializeObject(order);
             await _queueClient.SendMessageAsync(Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(message)));
         }
 
-        public async Task<List<OrderModel>> GetQueuedOrdersAsync()
+        public async Task<List<OrderMessageModel>> GetQueuedOrdersAsync()
         {
-            var list = new List<OrderModel>();
+            var list = new List<OrderMessageModel>();
             var peeked = await _queueClient.PeekMessagesAsync(maxMessages: 32);
             foreach (var msg in peeked.Value)
             {
                 var bytes = Convert.FromBase64String(msg.MessageText);
                 var json = System.Text.Encoding.UTF8.GetString(bytes);
-                var order = JsonConvert.DeserializeObject<OrderModel>(json);
+                var order = JsonConvert.DeserializeObject<OrderMessageModel>(json);
+                if (order != null)
+                {
                 list.Add(order);
+                }
             }
             return list;
         }
@@ -257,6 +291,62 @@ namespace CloudRetailsFunction.Services
             using var ms = new MemoryStream(content);
             await file.CreateAsync(ms.Length);
             await file.UploadRangeAsync(new HttpRange(0, ms.Length), ms);
+        }
+
+        public async Task<List<string>> ListContractFilesAsync()
+        {
+            var directory = _shareClient.GetRootDirectoryClient();
+            var results = new List<string>();
+
+            await foreach (var item in directory.GetFilesAndDirectoriesAsync())
+            {
+                if (!item.IsDirectory)
+                {
+                    results.Add(item.Name);
+                }
+            }
+
+            return results;
+        }
+
+        public async Task<byte[]?> DownloadContractFileAsync(string fileName)
+        {
+            var directory = _shareClient.GetRootDirectoryClient();
+            var file = directory.GetFileClient(fileName);
+            if (!await file.ExistsAsync())
+            {
+                return null;
+            }
+
+            var downloadResponse = await file.DownloadAsync();
+            using var ms = new MemoryStream();
+            await downloadResponse.Value.Content.CopyToAsync(ms);
+            return ms.ToArray();
+        }
+
+        public async Task<bool> DeleteContractFileAsync(string fileName)
+        {
+            var directory = _shareClient.GetRootDirectoryClient();
+            var file = directory.GetFileClient(fileName);
+            var response = await file.DeleteIfExistsAsync();
+            return response.Value;
+        }
+
+        private static string NormalizeBase64(string value)
+        {
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                return value;
+            }
+
+            var data = value.Trim();
+            var commaIndex = data.IndexOf(',');
+            if (commaIndex >= 0)
+            {
+                data = data[(commaIndex + 1)..];
+            }
+
+            return data;
         }
     }
 }

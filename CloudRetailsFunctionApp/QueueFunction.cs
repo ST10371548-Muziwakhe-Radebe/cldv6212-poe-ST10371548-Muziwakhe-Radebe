@@ -1,45 +1,56 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Threading.Tasks;
+using CloudRetailsFunction.Services;
+using CloudRetailsFunctionApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
-using Azure.Storage.Queues;
-using System;
+using Newtonsoft.Json;
 
-// DESCRIPTION: Azure Function that handles sending and receiving messages in Azure Queue Storage.
-//              Accepts a message via HTTP POST, enqueues it, then dequeues and logs the message.
-// SOURCES:
-//    - Azure Queue Storage Documentation: https://learn.microsoft.com/en-us/azure/storage/queues/
-//    - Azure Functions HTTP Trigger Documentation: https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook
+// DESCRIPTION: Azure Function exposing queue operations for order processing.
 
-public static class QueueFunction
+public class QueueFunction
 {
-    [FunctionName("QueueTransaction")]
-    public static async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+    private readonly IStorageService _storageService;
+
+    public QueueFunction(IStorageService storageService)
+    {
+        _storageService = storageService;
+    }
+
+    [FunctionName("OrdersQueue")]
+    public async Task<IActionResult> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "orders/queue")] HttpRequest req,
         ILogger log)
     {
-        log.LogInformation("Handling queue transaction.");
-
-        string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-        string message = requestBody.Trim(); // Ensure no extra whitespace
-
-        string connectionString = Environment.GetEnvironmentVariable("AzureWebJobsStorage");
-        var queueClient = new QueueClient(connectionString, "orders");
-        await queueClient.CreateIfNotExistsAsync();
-        await queueClient.SendMessageAsync(message);
-
-        // Receive a message
-        var response = await queueClient.ReceiveMessageAsync();
-        if (response.Value != null)
+        if (req.Method.Equals("GET", StringComparison.OrdinalIgnoreCase))
         {
-            var queueMessage = response.Value;
-            log.LogInformation($"Dequeued: {queueMessage.Body}");
-            await queueClient.DeleteMessageAsync(queueMessage.MessageId, queueMessage.PopReceipt);
+            var orders = await _storageService.GetQueuedOrdersAsync();
+            return new OkObjectResult(orders);
         }
 
-        return new OkObjectResult("Queue message handled.");
+        if (req.Method.Equals("POST", StringComparison.OrdinalIgnoreCase))
+        {
+            var payload = await new StreamReader(req.Body).ReadToEndAsync();
+            if (string.IsNullOrWhiteSpace(payload))
+            {
+                return new BadRequestObjectResult("Order payload is required.");
+            }
+
+            var order = JsonConvert.DeserializeObject<OrderMessageModel>(payload);
+            if (order == null)
+            {
+                return new BadRequestObjectResult("Invalid order payload.");
+            }
+
+            await _storageService.EnqueueOrderAsync(order);
+            return new OkObjectResult(order);
+        }
+
+        log.LogWarning("Unsupported HTTP method {Method}", req.Method);
+        return new BadRequestObjectResult("Unsupported HTTP verb.");
     }
 }

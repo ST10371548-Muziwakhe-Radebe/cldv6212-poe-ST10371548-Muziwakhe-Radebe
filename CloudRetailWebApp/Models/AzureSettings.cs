@@ -7,12 +7,12 @@ namespace CloudRetailWebApp.Models
 {
     public class AzureSettings
     {
-        public string ConnectionString { get; set; }
-        public string BlobContainerName { get; set; }
-        public string TableNameCustomers { get; set; }
-        public string TableNameProducts { get; set; }
-        public string QueueName { get; set; }
-        public string FileShareName { get; set; }
-        public string FunctionAppBaseUrl { get; set; }   // optional if calling your Functions
+        public string ConnectionString { get; set; } = string.Empty;
+        public string BlobContainerName { get; set; } = string.Empty;
+        public string TableNameCustomers { get; set; } = string.Empty;
+        public string TableNameProducts { get; set; } = string.Empty;
+        public string QueueName { get; set; } = string.Empty;
+        public string FileShareName { get; set; } = string.Empty;
+        public string FunctionAppBaseUrl { get; set; } = string.Empty;   // optional if calling your Functions
     }
 }

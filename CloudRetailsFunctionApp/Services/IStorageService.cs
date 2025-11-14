@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+#nullable enable
+
 namespace CloudRetailsFunction.Services
 {
     public interface IStorageService
@@ -20,25 +22,28 @@ namespace CloudRetailsFunction.Services
         // DESCRIPTION: Methods for CRUD operations on customer records in Azure Table Storage.
         Task AddCustomerAsync(CustomerModel customer);
         Task<List<CustomerModel>> GetCustomersAsync();
-        Task<CustomerModel> GetCustomerAsync(string partitionKey, string rowKey);
+        Task<CustomerModel?> GetCustomerAsync(string partitionKey, string rowKey);
         Task UpdateCustomerAsync(CustomerModel customer);
         Task DeleteCustomerAsync(string partitionKey, string rowKey);
 
         // DESCRIPTION: Methods for CRUD operations on product records in Azure Table Storage
         //              with optional blob image upload.
-        Task AddProductAsync(ProductModel product, IFormFile imageFile = null);
+        Task AddProductAsync(ProductModel product, IFormFile? imageFile = null);
         Task<List<ProductModel>> GetProductsAsync();
-        Task<ProductModel> GetProductAsync(string partitionKey, string rowKey);
-        Task UpdateProductAsync(ProductModel product, IFormFile imageFile = null);
+        Task<ProductModel?> GetProductAsync(string partitionKey, string rowKey);
+        Task UpdateProductAsync(ProductModel product, IFormFile? imageFile = null);
         Task DeleteProductAsync(string partitionKey, string rowKey);
 
 
         // DESCRIPTION: Methods for enqueueing orders and retrieving orders from Azure Queue Storage.
-        Task EnqueueOrderAsync(OrderModel order);
-        Task<List<OrderModel>> GetQueuedOrdersAsync();
+        Task EnqueueOrderAsync(OrderMessageModel order);
+        Task<List<OrderMessageModel>> GetQueuedOrdersAsync();
 
 
         // DESCRIPTION: Method to upload files to Azure File Share storage.
         Task SendFileToFileShareAsync(string fileName, byte[] content);
+        Task<List<string>> ListContractFilesAsync();
+        Task<byte[]?> DownloadContractFileAsync(string fileName);
+        Task<bool> DeleteContractFileAsync(string fileName);
     }
 }

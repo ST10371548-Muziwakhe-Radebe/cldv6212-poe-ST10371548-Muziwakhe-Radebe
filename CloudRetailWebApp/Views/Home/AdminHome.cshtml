@@ -1,0 +1,117 @@
+@model CloudRetailWebApp.Models.AdminDashboardViewModel
+
+@{
+    ViewData["Title"] = "Admin Home";
+}
+
+<div class="mb-4">
+    <h2>Administrator Dashboard</h2>
+    <p class="text-muted">Monitor CloudRetail operations and jump into management tasks.</p>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Total orders</p>
+                <h3 class="fw-bold">@Model.TotalOrders</h3>
+                <a asp-controller="Orders" asp-action="Index" class="stretched-link">View orders</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Pending orders</p>
+                <h3 class="fw-bold">@Model.PendingOrders</h3>
+                <span class="text-muted">Queue monitoring</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Registered users</p>
+                <h3 class="fw-bold">@Model.TotalUsers</h3>
+                <a asp-controller="Customers" asp-action="Index" class="stretched-link">Manage customers</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Available products</p>
+                <h3 class="fw-bold">@Model.ProductCount</h3>
+                <a asp-controller="Products" asp-action="Index" class="stretched-link">Manage catalog</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Queued Orders (peek)</span>
+                <a asp-controller="Admin" asp-action="Index">Full admin view</a>
+            </div>
+            <div class="card-body">
+                @if (Model.QueuedOrders.Any())
+                {
+                    <table class="table table-sm align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th>Order #</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var message in Model.QueuedOrders.Take(5))
+                            {
+                                <tr>
+                                    <td>@message.OrderId</td>
+                                    <td>R @message.TotalAmount</td>
+                                    <td>@message.Status</td>
+                                    <td>@message.OrderDate.ToLocalTime().ToString("dd MMM HH:mm")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p class="text-muted mb-0">No orders waiting in the queue.</p>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header">Contract Files</div>
+            <div class="card-body">
+                @if (Model.ContractFiles.Any())
+                {
+                    <ul class="list-group list-group-flush">
+                        @foreach (var file in Model.ContractFiles.Take(6))
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>@file</span>
+                                <a asp-controller="Contracts" asp-action="Download" asp-route-fileName="@file" class="btn btn-sm btn-outline-secondary">Download</a>
+                            </li>
+                        }
+                    </ul>
+                    <div class="mt-3">
+                        <a asp-controller="Contracts" asp-action="Index" class="btn btn-outline-primary btn-sm">Manage contracts</a>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted mb-0">No contract files uploaded yet.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

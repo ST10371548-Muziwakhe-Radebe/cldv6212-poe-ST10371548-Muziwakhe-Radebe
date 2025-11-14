@@ -1,0 +1,80 @@
+@using System.Linq
+@model CloudRetailWebApp.Models.CustomerDashboardViewModel
+
+@{
+    ViewData["Title"] = "Customer Home";
+}
+
+<div class="mb-4">
+    <h2>Hello, @Model.Username!</h2>
+    <p class="text-muted">Here is a quick overview of your CloudRetail activity.</p>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Orders placed</p>
+                <h3 class="fw-bold">@Model.OrderCount</h3>
+                <a class="stretched-link" asp-controller="Orders" asp-action="Index">View my orders</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Items in cart</p>
+                <h3 class="fw-bold">@Model.CartItems</h3>
+                <a class="stretched-link" asp-controller="Cart" asp-action="Index">Go to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <p class="text-uppercase text-muted small mb-1">Need help?</p>
+                <h3 class="fw-bold">Support</h3>
+                <p class="mb-0">Contact the admin team for password resets or access.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="mb-0">Featured products</h4>
+        <a asp-controller="Products" asp-action="Index" class="btn btn-sm btn-outline-primary">Browse all products</a>
+    </div>
+
+    @if (Model.FeaturedProducts.Any())
+    {
+        <div class="row g-3">
+            @foreach (var product in Model.FeaturedProducts)
+            {
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        @if (!string.IsNullOrWhiteSpace(product.ImageBlobPath))
+                        {
+                            <img src="@product.ImageBlobPath" class="card-img-top" alt="@product.Name" />
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text text-muted">@product.Description</p>
+                            <p class="fw-bold">R @product.Price</p>
+                            <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-flex gap-2">
+                                <input type="hidden" name="productId" value="@product.RowKey" />
+                                <input type="number" name="quantity" value="1" min="1" class="form-control form-control-sm" />
+                                <button type="submit" class="btn btn-primary btn-sm">Add to cart</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">No products available yet. Please check back soon.</div>
+    }
+</section>
+

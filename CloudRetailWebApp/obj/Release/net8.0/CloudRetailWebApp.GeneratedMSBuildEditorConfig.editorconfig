@@ -9,81 +9,129 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CloudRetailWebApp
 build_property.RootNamespace = CloudRetailWebApp
-build_property.ProjectDir = D:\mboni\CloudRetailWebApp\
+build_property.ProjectDir = D:\Users\mboni\OneDrive\Documents\GitHub\cldv6212-poe-ST10371548-Muziwakhe-Radebe\CloudRetailWebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\mboni\CloudRetailWebApp
+build_property.MSBuildProjectDirectory = D:\Users\mboni\OneDrive\Documents\GitHub\cldv6212-poe-ST10371548-Muziwakhe-Radebe\CloudRetailWebApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/mboni/CloudRetailWebApp/Views/Customers/Create.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Admin/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Contracts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhY3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Contracts/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhY3RzXFVwbG9hZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Customers/Delete.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Customers/Details.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Customers/Edit.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Customers/Index.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Orders/Create.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Home/AdminHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbkhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Home/CustomerHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Orders/Index.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Products/Create.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Products/AddtoCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQWRkdG9DYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Products/Delete.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Products/Details.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Products/Edit.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Products/Index.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Shared/Error.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/_ViewImports.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/_ViewStart.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/mboni/CloudRetailWebApp/Views/Shared/_Layout.cshtml]
+[D:/Users/mboni/OneDrive/Documents/GitHub/cldv6212-poe-ST10371548-Muziwakhe-Radebe/CloudRetailWebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-szcax8pmwu

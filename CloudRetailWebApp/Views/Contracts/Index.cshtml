@@ -1,0 +1,68 @@
+@{
+    ViewData["Title"] = "Contract Management";
+}
+
+<h2>Contract Management</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="mb-3">
+    <a asp-action="Upload" class="btn btn-primary">Upload New Contract</a>
+</div>
+
+<div id="contractsList">
+    <p>Loading contracts...</p>
+</div>
+
+@section Scripts {
+    <script>
+        async function loadContracts() {
+            try {
+                const response = await fetch('@Url.Action("ListFiles", "Contracts")');
+                const files = await response.json();
+                
+                const container = document.getElementById('contractsList');
+                if (files.length === 0) {
+                    container.innerHTML = '<p class="text-muted">No contracts found. Upload a contract to get started.</p>';
+                    return;
+                }
+
+                let html = '<table class="table table-striped"><thead><tr><th>File Name</th><th>Actions</th></tr></thead><tbody>';
+                files.forEach(file => {
+                    html += `<tr>
+                        <td>${file}</td>
+                        <td>
+                            <a href="@Url.Action("Download", "Contracts")?fileName=${encodeURIComponent(file)}" class="btn btn-sm btn-primary">Download</a>
+                            <form asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this contract?');">
+                                <input type="hidden" name="fileName" value="${file}" />
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>`;
+                });
+                html += '</tbody></table>';
+                container.innerHTML = html;
+            } catch (error) {
+                document.getElementById('contractsList').innerHTML = '<p class="text-danger">Error loading contracts. Please refresh the page.</p>';
+            }
+        }
+
+        loadContracts();
+    </script>
+}
+

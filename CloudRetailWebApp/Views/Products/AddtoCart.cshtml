@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CloudRetailWebApp.Models.ProductModel>
+
+@{
+    ViewData["Title"] = "Your Selected Products";
+}
+
+<h2>Your Selected Products</h2>
+
+@if (!Model.Any())
+{
+    <p>You have not selected any products yet.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>R @item.Price</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.ImageBlobPath))
+                        {
+                            <img src="@item.ImageBlobPath" width="80" />
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-action="Index" class="btn btn-primary mt-3">⬅ Back to Products</a>
